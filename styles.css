@@ -936,6 +936,40 @@ ul {
     padding: var(--spacing-xl) 0 var(--spacing-md);
 }
 
+.footer-main {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.footer-project h3 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.footer-subtitle {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-icon {
+    width: 56px;
+    height: 56px;
+    color: var(--primary-blue);
+}
+
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -943,49 +977,32 @@ ul {
     margin-bottom: var(--spacing-lg);
 }
 
-.footer-logo h3 {
-    color: white;
-    margin-bottom: var(--spacing-xs);
-}
-
-.footer-subtitle {
-    font-size: 1.5rem;
-    font-weight: 700;
+.footer-section-col h4 {
     color: var(--primary-blue);
-}
-
-.footer-icon {
-    width: 48px;
-    height: 48px;
-    color: var(--primary-blue);
-    margin-bottom: var(--spacing-sm);
-}
-
-.footer-text {
-    opacity: 0.9;
+    font-size: 1.125rem;
     margin-bottom: var(--spacing-md);
+    font-weight: 600;
 }
 
-.footer-date {
+.footer-section-col p {
+    opacity: 0.85;
+    margin-bottom: var(--spacing-xs);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.footer-year {
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
-    opacity: 0.8;
+    margin-top: var(--spacing-sm);
+    font-weight: 600;
+    color: var(--primary-blue);
 }
 
-.footer-date svg {
-    width: 20px;
-    height: 20px;
-}
-
-.footer-authors h4 {
-    color: white;
-    margin-bottom: var(--spacing-sm);
-}
-
-.footer-authors p {
-    opacity: 0.9;
-    margin-bottom: var(--spacing-xs);
+.footer-year svg {
+    width: 18px;
+    height: 18px;
 }
 
 .footer-bottom {
@@ -1210,6 +1227,14 @@ ul {
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
+    }
+    
+    .footer-section-col {
+        text-align: center;
+    }
+    
+    .footer-year {
+        justify-content: center;
     }
     
     .back-to-top {
