@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SOPHI.A - Chatbot Socrático para Orientación Vocacional y Emocional. Integrando Filosofía Clásica e Inteligencia Artificial para el Bienestar Estudiantil.">
+    <meta name="keywords" content="SOPHI.A, chatbot socrático, orientación vocacional, inteligencia artificial, educación virtual, UNAD">
+    <meta name="author" content="Andrés Eduardo Muñoz Roa, David Emilio Sierra Puentes">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="SOPHI.A - Chatbot Socrático para Orientación Vocacional">
+    <meta property="og:description" content="Integrando Filosofía Clásica e Inteligencia Artificial para el Bienestar Estudiantil">
+    <meta property="og:type" content="website">
+    
+    <title>SOPHI.A | Chatbot Socrático UNAD</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-logo">
+                <i data-lucide="bot" class="nav-icon"></i>
+                <span>SOPHI.A</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Inicio</a></li>
+                <li><a href="#introduccion" class="nav-link">Introducción</a></li>
+                <li><a href="#problema" class="nav-link">Problema</a></li>
+                <li><a href="#justificacion" class="nav-link">Justificación</a></li>
+                <li><a href="#objetivos" class="nav-link">Objetivos</a></li>
+                <li><a href="#colaboracion" class="nav-link">Colaboración</a></li>
+                <li><a href="#referencias" class="nav-link">Referencias</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section 1: Hero/Portada -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="container hero-content">
+            <div class="hero-icon">
+                <i data-lucide="brain-circuit" class="hero-main-icon"></i>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-main">SOPHI.A</span>
+                <span class="title-subtitle">Chatbot Socrático para Orientación Vocacional y Emocional</span>
+            </h1>
+            <p class="hero-description">
+                Integrando Filosofía Clásica e Inteligencia Artificial<br>
+                para el Bienestar Estudiantil
+            </p>
+            <div class="hero-meta">
+                <div class="meta-item">
+                    <i data-lucide="users" class="meta-icon"></i>
+                    <div class="meta-content">
+                        <p class="meta-label">Autores</p>
+                        <p class="meta-value">Andrés Eduardo Muñoz Roa<br>David Emilio Sierra Puentes</p>
+                    </div>
+                </div>
+                <div class="meta-item">
+                    <i data-lucide="building-2" class="meta-icon"></i>
+                    <div class="meta-content">
+                        <p class="meta-label">Institución</p>
+                        <p class="meta-value">Universidad Nacional Abierta y a Distancia - UNAD</p>
+                    </div>
+                </div>
+                <div class="meta-item">
+                    <i data-lucide="calendar" class="meta-icon"></i>
+                    <div class="meta-content">
+                        <p class="meta-label">Año</p>
+                        <p class="meta-value">2025</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#introduccion" class="hero-cta">
+                <span>Explorar proyecto</span>
+                <i data-lucide="arrow-down" class="cta-icon"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section 2: Introducción -->
+    <section id="introduccion" class="section intro-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Introducción</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="intro-grid">
+                <div class="intro-card" data-animate="left">
+                    <div class="intro-icon">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <h3>Contexto</h3>
+                    <p>El desarrollo tecnológico ha transformado radicalmente el aprendizaje y la comunicación en la educación superior.</p>
+                    <div class="intro-stat">
+                        <span class="stat-number">+70%</span>
+                        <span class="stat-label">Estudiantes en modalidad virtual</span>
+                    </div>
+                </div>
+                <div class="intro-card" data-animate="right">
+                    <div class="intro-icon featured">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <h3>Solución SOPHI.A</h3>
+                    <p>Integra el <span class="tooltip-trigger" data-tooltip="El método socrático usa preguntas para estimular el pensamiento crítico y el autodescubrimiento">método socrático</span> con IA para fomentar autocomprensión y bienestar emocional.</p>
+                    <div class="keyword-tags">
+                        <span class="tag">Inteligencia Artificial</span>
+                        <span class="tag">Método Socrático</span>
+                        <span class="tag">Orientación Vocacional</span>
+                        <span class="tag">Educación Emocional</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Planteamiento del Problema -->
+    <section id="problema" class="section problem-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Planteamiento del Problema</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="funnel-container">
+                <div class="funnel-level level-1" data-animate="fade">
+                    <div class="funnel-content">
+                        <i data-lucide="alert-circle" class="funnel-icon"></i>
+                        <h3>Situación Actual</h3>
+                        <ul class="funnel-list">
+                            <li>Estudiantes enfrentan incertidumbre sobre su futuro profesional</li>
+                            <li>Dificultades para manejar estrés y frustración académica</li>
+                            <li>Necesidad de orientación personalizada y accesible</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="funnel-level level-2" data-animate="fade">
+                    <div class="funnel-content">
+                        <i data-lucide="trending-down" class="funnel-icon"></i>
+                        <h3>Brecha Identificada</h3>
+                        <ul class="funnel-list">
+                            <li>Falta de acompañamiento emocional accesible en entornos virtuales</li>
+                            <li>Limitadas habilidades en el uso de herramientas de IA</li>
+                            <li>Interacciones digitales sin profundidad reflexiva</li>
+                        </ul>
+                        <blockquote class="funnel-quote">
+                            "Los jóvenes temen más el impacto de la IA en sus empleos que sus colegas mayores"
+                            <cite>— Investing.com, 2025</cite>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="funnel-level level-3" data-animate="fade">
+                    <div class="funnel-content highlight">
+                        <i data-lucide="lightbulb" class="funnel-icon"></i>
+                        <h3>Pregunta de Investigación</h3>
+                        <p class="research-question">
+                            ¿Cómo puede un chatbot basado en IA, inspirado en el método socrático, contribuir al fortalecimiento de la orientación vocacional y emocional de estudiantes en entornos virtuales durante 2025?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Justificación -->
+    <section id="justificacion" class="section justify-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Justificación</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="cards-grid">
+                <div class="flip-card" data-animate="fade">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i data-lucide="rocket" class="card-icon"></i>
+                            <h3>Innovación</h3>
+                            <p>Solución tecnológica única</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Solución Innovadora</h3>
+                            <p>Integra filosofía clásica con IA aplicada a orientación humana.</p>
+                            <p><strong>Método socrático:</strong> preguntas que llevan al autodescubrimiento</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card" data-animate="fade">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i data-lucide="shield-check" class="card-icon"></i>
+                            <h3>Ventajas del Método</h3>
+                            <p>Protección contra sesgos</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Protección contra Sesgos</h3>
+                            <ul>
+                                <li>Evita respuestas incoherentes de IA generativa</li>
+                                <li>El usuario genera sus propias respuestas</li>
+                                <li>Mantiene diálogo centrado y reflexivo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card" data-animate="fade">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i data-lucide="target" class="card-icon"></i>
+                            <h3>Impacto Educativo</h3>
+                            <p>Desarrollo integral del estudiante</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Desarrollo Integral</h3>
+                            <ul>
+                                <li>Fortalece e-competencias emocionales</li>
+                                <li>Promueve pensamiento crítico</li>
+                                <li>Gestión emocional en línea</li>
+                                <li>Uso más humano y ético de la tecnología</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card" data-animate="fade">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i data-lucide="book-open" class="card-icon"></i>
+                            <h3>Relevancia</h3>
+                            <p>Necesidad actual urgente</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Necesidad Actual</h3>
+                            <p>Creciente necesidad de acompañamiento emocional y orientación vocacional en escenarios virtuales.</p>
+                            <p class="card-citation">Basado en estudios de Cebollero-Salinas et al. (2022)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Objetivos -->
+    <section id="objetivos" class="section objectives-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Objetivos</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="objectives-timeline">
+                <div class="objective-item objective-general" data-animate="fade">
+                    <div class="objective-marker">
+                        <i data-lucide="target"></i>
+                    </div>
+                    <div class="objective-content">
+                        <span class="objective-label">Objetivo General</span>
+                        <h3>Diseñar y desarrollar SOPHI.A</h3>
+                        <p>Un Chatbot basado en IA, inspirado en el método socrático y aristotélico, que brinde acompañamiento vocacional y emocional a estudiantes de educación virtual en Colombia durante 2025.</p>
+                    </div>
+                </div>
+                
+                <div class="objectives-specific">
+                    <h4 class="specific-title">Objetivos Específicos</h4>
+                    
+                    <div class="objective-item" data-animate="fade">
+                        <div class="objective-marker">
+                            <i data-lucide="search"></i>
+                        </div>
+                        <div class="objective-content">
+                            <span class="objective-number">01</span>
+                            <h4>Analizar necesidades</h4>
+                            <p>Analizar necesidades emocionales y vocacionales de estudiantes en entornos virtuales.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="objective-item" data-animate="fade">
+                        <div class="objective-marker">
+                            <i data-lucide="message-circle"></i>
+                        </div>
+                        <div class="objective-content">
+                            <span class="objective-number">02</span>
+                            <h4>Diseñar modelo conversacional</h4>
+                            <p>Diseñar modelo conversacional socrático-aristotélico para diálogo reflexivo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="objective-item" data-animate="fade">
+                        <div class="objective-marker">
+                            <i data-lucide="settings"></i>
+                        </div>
+                        <div class="objective-content">
+                            <span class="objective-number">03</span>
+                            <h4>Implementar prototipo</h4>
+                            <p>Implementar prototipo funcional con procesamiento de lenguaje natural (LLM) y respuestas adaptativas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="objective-item" data-animate="fade">
+                        <div class="objective-marker">
+                            <i data-lucide="bar-chart-3"></i>
+                        </div>
+                        <div class="objective-content">
+                            <span class="objective-number">04</span>
+                            <h4>Evaluar impacto</h4>
+                            <p>Evaluar impacto en autocomprensión, bienestar emocional y toma de decisiones vocacionales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Trabajo Colaborativo -->
+    <section id="colaboracion" class="section collab-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trabajo Colaborativo</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="collab-tools" data-animate="fade">
+                <h3>Herramientas Utilizadas</h3>
+                <div class="tools-grid">
+                    <div class="tool-item">
+                        <i data-lucide="video" class="tool-icon"></i>
+                        <h4>Microsoft Teams</h4>
+                        <p>Reuniones virtuales semanales</p>
+                    </div>
+                    <div class="tool-item">
+                        <i data-lucide="message-square" class="tool-icon"></i>
+                        <h4>MeWe</h4>
+                        <p>Comunicación asíncrona</p>
+                    </div>
+                    <div class="tool-item">
+                        <i data-lucide="file-text" class="tool-icon"></i>
+                        <h4>Documentos Compartidos</h4>
+                        <p>Edición colaborativa</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="collab-process" data-animate="fade">
+                <h3>Proceso Colaborativo</h3>
+                <div class="process-grid">
+                    <div class="process-item">
+                        <i data-lucide="users-2" class="process-icon"></i>
+                        <p>Reuniones virtuales semanales</p>
+                    </div>
+                    <div class="process-item">
+                        <i data-lucide="edit-3" class="process-icon"></i>
+                        <p>Edición colaborativa de documentos</p>
+                    </div>
+                    <div class="process-item">
+                        <i data-lucide="message-circle-heart" class="process-icon"></i>
+                        <p>Comunicación constante</p>
+                    </div>
+                    <div class="process-item">
+                        <i data-lucide="calendar-check" class="process-icon"></i>
+                        <p>Distribución de tareas</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="collab-gallery" data-animate="fade">
+                <h3>Evidencias Visuales</h3>
+                <p class="gallery-note">Imágenes de reuniones en Teams, conversaciones en MeWe, y documentos compartidos</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-gallery="1">
+                        <div class="gallery-placeholder">
+                            <i data-lucide="image"></i>
+                            <p>Captura de pantalla<br>Reunión Teams</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-gallery="2">
+                        <div class="gallery-placeholder">
+                            <i data-lucide="image"></i>
+                            <p>Captura de pantalla<br>Conversación MeWe</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-gallery="3">
+                        <div class="gallery-placeholder">
+                            <i data-lucide="image"></i>
+                            <p>Documentos<br>Compartidos</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-gallery="4">
+                        <div class="gallery-placeholder">
+                            <i data-lucide="image"></i>
+                            <p>Cronograma<br>de Trabajo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-roles" data-animate="fade">
+                <h3>Equipo de Trabajo</h3>
+                <div class="roles-grid">
+                    <div class="role-card">
+                        <i data-lucide="user-circle" class="role-icon"></i>
+                        <h4>Andrés Eduardo Muñoz Roa</h4>
+                        <p>Investigación filosófica, diseño del modelo conversacional socrático, desarrollo de contenidos.</p>
+                    </div>
+                    <div class="role-card">
+                        <i data-lucide="user-circle" class="role-icon"></i>
+                        <h4>David Emilio Sierra Puentes</h4>
+                        <p>Análisis de necesidades estudiantiles, implementación técnica, evaluación de impacto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Referencias -->
+    <section id="referencias" class="section references-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Referencias Bibliográficas</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="references-list">
+                <div class="reference-item" data-animate="fade">
+                    <i data-lucide="book-open" class="ref-icon"></i>
+                    <div class="ref-content">
+                        <p class="ref-text">
+                            Cebollero-Salinas, A., Bautista, P., Cano, J., & Orejudo, S. (2022). E-competencias e inteligencia colectiva: Propuestas para el desarrollo emocional en las interacciones en línea. <em>Revista Internacional de Educación Emocional y Bienestar</em>, págs. 13-32. Universidad Iberoamericana.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="reference-item" data-animate="fade">
+                    <i data-lucide="book-open" class="ref-icon"></i>
+                    <div class="ref-content">
+                        <p class="ref-text">
+                            García, F. (2024). <em>Texto argumentativo</em> [Objeto virtual de aprendizaje OVA]. Universidad Nacional Abierta y a Distancia (UNAD). <a href="https://repository.unad.edu.co/handle/10596/62862" target="_blank" rel="noopener">https://repository.unad.edu.co/handle/10596/62862</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="reference-item" data-animate="fade">
+                    <i data-lucide="newspaper" class="ref-icon"></i>
+                    <div class="ref-content">
+                        <p class="ref-text">
+                            Investing.com. (2025, octubre 7). Los jóvenes temen más el impacto de la IA en sus empleos que sus colegas mayores. <a href="https://es.investing.com/news/economy-news/los-jovenes-temen-mas-el-impacto-de-la-ia-en-sus-empleos-que-sus-colegas-mayores--db-3320662" target="_blank" rel="noopener">https://es.investing.com/news/economy-news/los-jovenes-temen-mas-el-impacto-de-la-ia-en-sus-empleos-que-sus-colegas-mayores--db-3320662</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="reference-item" data-animate="fade">
+                    <i data-lucide="book-open" class="ref-icon"></i>
+                    <div class="ref-content">
+                        <p class="ref-text">
+                            López, B. (2025). <em>Competencias digitales</em> [Objeto virtual de aprendizaje OVA]. Universidad Nacional Abierta y a Distancia (UNAD). <a href="https://repository.unad.edu.co/handle/10596/68872" target="_blank" rel="noopener">https://repository.unad.edu.co/handle/10596/68872</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="reference-item" data-animate="fade">
+                    <i data-lucide="globe" class="ref-icon"></i>
+                    <div class="ref-content">
+                        <p class="ref-text">
+                            Organización Mundial de la Salud. (2023, marzo 15). Salud mental: Fortalecimiento de la respuesta efectiva en tiempos de crisis. <a href="https://www.who.int/es/news-room/detail/15-03-2023-salud-mental-crisis" target="_blank" rel="noopener">https://www.who.int/es/news-room/detail/15-03-2023-salud-mental-crisis</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="reference-item" data-animate="fade">
+                    <i data-lucide="book-open" class="ref-icon"></i>
+                    <div class="ref-content">
+                        <p class="ref-text">
+                            Quiñonez, F. (2015). De la cultura a la cibercultura. <em>Universidad Santo Tomás</em>. <a href="https://revistas.usantotomas.edu.co/index.php/hallazgos/article/view/1630/1783" target="_blank" rel="noopener">https://revistas.usantotomas.edu.co/index.php/hallazgos/article/view/1630/1783</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Footer/Cierre -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i data-lucide="graduation-cap" class="footer-icon"></i>
+                    <h3>Universidad Nacional Abierta y a Distancia</h3>
+                    <p class="footer-subtitle">UNAD</p>
+                </div>
+                <div class="footer-info">
+                    <p class="footer-text">
+                        Conoce más sobre SOPHI.A y únete a la transformación<br>
+                        de la educación emocional virtual
+                    </p>
+                    <p class="footer-date">
+                        <i data-lucide="calendar"></i>
+                        Octubre 2025
+                    </p>
+                </div>
+                <div class="footer-authors">
+                    <h4>Autores</h4>
+                    <p>Andrés Eduardo Muñoz Roa</p>
+                    <p>David Emilio Sierra Puentes</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UNAD - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Tooltip -->
+    <div class="tooltip" id="tooltip"></div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">
+            <i data-lucide="x"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <p id="lightboxCaption"></p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
